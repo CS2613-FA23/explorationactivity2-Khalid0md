@@ -4,26 +4,28 @@
 <p>Some of the functionalities of the Selenium Webdriver are showcased in the code. These include:
     <ul>
         <li>Navigating to a webpage: 
-        ```python
+        <pre><code>
         driver.get(login_url)
-        ```</li>
+        </pre></code>
+        </li>
         <li>Executing Javascript on the browser: 
-        ``` driver.execute_script(
+        <pre><code>
+        driver.execute_script(
         "document.getElementById('username').value = arguments[0];", 
         username
         )
-        ```
+        </pre></code>
         </li>
         <li>Clicking links within the page: 
-        ```python
+        <pre><code>
         continue_button_selector = "#basic-login > div:nth-child(1) > form > div:nth-child(2) > div:nth-child(6) > div.sign-in.hide-if-one-time-linking > button.solid-button.continue-submit.new-design"
         driver.execute_script(f"document.querySelector('{continue_button_selector}').click();")
-        ```
+        </pre></code>
         </li>
         <li>Teeing up a webpage to be scraped by other libraries like Beautiful Soup: 
-        ```python
+        <pre><code>
         soup = BeautifulSoup(driver.page_source, 'html.parser')
-        ```
+        </pre></code>
         </li>
     </ul>
 </p>
