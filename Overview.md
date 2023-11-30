@@ -3,14 +3,28 @@
 <p>The purpose of Selenium's Webdriver is to communicate directly with an instance of a web browser. Developers may want to do this for many reasons, but it is most prominently used in the industry for front-end testing. Selenium can also be used to automate tasks and can be anything from logging daily visits to a website, to, in my case, logging into a website, and scraping data on a timely basis. This can all be done in code, as the python library offers multiple functions for clicking, executing javascript code, scraping the DOM, among others.</p>
 <p>Some of the functionalities of the Selenium Webdriver are showcased in the code. These include:
     <ul>
-        <li>Navigating to a webpage: ```driver.get(login_url)```</li>
-        <li>Executing Javascript on the browser: ``` driver.execute_script(
+        <li>Navigating to a webpage: 
+        ```python
+        driver.get(login_url)
+        ```</li>
+        <li>Executing Javascript on the browser: 
+        ``` driver.execute_script(
         "document.getElementById('username').value = arguments[0];", 
         username
-    )```</li>
-        <li>Clicking links within the page: ```continue_button_selector = "#basic-login > div:nth-child(1) > form > div:nth-child(2) > div:nth-child(6) > div.sign-in.hide-if-one-time-linking > button.solid-button.continue-submit.new-design"
-    driver.execute_script(f"document.querySelector('{continue_button_selector}').click();")```</li>
-        <li>Teeing up a webpage to be scraped by other libraries like Beautiful Soup: ```soup = BeautifulSoup(driver.page_source, 'html.parser')```</li>
+        )
+        ```
+        </li>
+        <li>Clicking links within the page: 
+        ```python
+        continue_button_selector = "#basic-login > div:nth-child(1) > form > div:nth-child(2) > div:nth-child(6) > div.sign-in.hide-if-one-time-linking > button.solid-button.continue-submit.new-design"
+        driver.execute_script(f"document.querySelector('{continue_button_selector}').click();")
+        ```
+        </li>
+        <li>Teeing up a webpage to be scraped by other libraries like Beautiful Soup: 
+        ```python
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        ```
+        </li>
     </ul>
 </p>
 <p>Selenium was created by Jason Huggins in 2004 <a href="https://www.guru99.com/introduction-to-selenium.html">[ref]</a></p>
