@@ -3,8 +3,9 @@
 <h2>Automation with Selenium, Time series analysis with pandas</h2>
 <ol>
     <li>This program demonstrates the Selenium webdriver library, and builds on the previous EA's use of the pandas library for time series analysis, other data manipulation activities</li>
-    <li>To run the program, Install all dependencies using pipfile:
+    <li>To run the program:
     </li>
+    Install all dependencies using pipfile:
     <p>```
     pipenv install
     ```
